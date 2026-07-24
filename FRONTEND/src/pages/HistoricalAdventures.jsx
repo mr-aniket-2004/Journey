@@ -9,35 +9,7 @@ export default function HistoricalAdventures() {
   const location = useLocation();
   const journeyItem = location.state?.journeyItem || {};
 
-  const features = [
-    {
-      id: "guides",
-      title: "GUIDES",
-      icon: (
-        <Compass className="w-10 h-10 text-[#4a9aaa] group-hover:scale-110 transition-transform duration-300" />
-      ),
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolore magnam aliquam.",
-    },
-    {
-      id: "tours",
-      title: "TOURS",
-      icon: (
-        <Map className="w-10 h-10 text-[#4a9aaa] group-hover:scale-110 transition-transform duration-300" />
-      ),
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolore magnam aliquam.",
-    },
-    {
-      id: "camping",
-      title: "CAMPING",
-      icon: (
-        <Flame className="w-10 h-10 text-[#4a9aaa] group-hover:scale-110 transition-transform duration-300" />
-      ),
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do dolore magnam aliquam.",
-    },
-  ];
+
 
   // Updated image URLs to relevant high-quality historical & archaeological photos
   const finaldata = journeyItem.id ? TravelData.find((item) => item.id === journeyItem.id) : TravelData[0];
@@ -94,26 +66,6 @@ export default function HistoricalAdventures() {
           <p>{journeyItem.longDescription}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
-          {features.map((item) => (
-            <div
-              key={item.id}
-              className="group relative bg-[#131B2E] border border-[#E8D5C4]/10 hover:border-[#4a9aaa] rounded-xl p-6 flex flex-col items-center text-center space-y-4 transition-all duration-300 hover:-translate-y-2 shadow-lg hover:shadow-aqua-500/5"
-            >
-              <div className="p-4 rounded-full bg-amber-400/5 border border-[#4a9aaa] group-hover:border-[#4a9aaa] transition-colors duration-300">
-                {item.icon}
-              </div>
-
-              <h3 className="text-xl font-bold font-serif tracking-widest text-[#E8D5C4] group-hover:text-[#4a9aaa] transition-colors">
-                {item.title}
-              </h3>
-
-              <p className="text-xs text-[#E8D5C4]/60 font-mono leading-relaxed">
-                {item.description}
-              </p>
-            </div>
-          ))}
-        </div>
       </section>
 
       <div className="max-w-6xl mx-auto border-t border-[#E8D5C4]/10 my-4" />
