@@ -4,9 +4,9 @@
 
 ## Live Demo
 
-Explore the deployed portfolio here:
 
-<a href="https://journey-eight-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">Explore the deployed portfolio here</a>
+
+Explore the deployed portfolio here: [Journey Portfolio](https://journey-eight-gamma.vercel.app/)
 
 ## Project Overview
 
