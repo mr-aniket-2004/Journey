@@ -1,6 +1,6 @@
 ﻿# Journey Frontend
 
-![Live Website Screenshot](./live-website-screenshot.png)
+![Hero Image](./FRONTEND/public/HERO.png)
 
 ## Live Demo
 
