@@ -1,16 +1,114 @@
-# React + Vite
+﻿# Journey Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Live Website Screenshot](./live-website-screenshot.png)
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Explore the deployed portfolio here:
 
-## React Compiler
+- https://journey-eight-gamma.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Overview
 
-## Expanding the ESLint configuration
+`Journey` is a React + Vite portfolio that blends travel stories, professional milestones, and interactive UI animations in a modern landing page experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The website includes:
+
+- Animated homepage hero section
+- Interactive timeline and story cards
+- Smooth navigation with React Router
+- Icon-based floating actions and social links
+- Responsive layout and modern dark theme styling
+
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
+- React Icons
+- @icons-pack/react-simple-icons
+
+## Setup Instructions
+
+Use the commands below to run this project locally.
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/Journey.git
+cd FRONTEND
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+Then open the local URL shown by Vite in your browser.
+
+## Available Scripts
+
+- `npm run dev` - Start the Vite development server
+- `npm run build` - Build the app for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint checks
+
+## Adding Interactive Pages
+
+To add new interactive content:
+
+1. Create components in `src/components/`.
+2. Add page files in `src/pages/`.
+3. Register routes in `src/App.jsx` using `react-router-dom`.
+4. Use `framer-motion` for animations and `react-icons` for iconography.
+
+## Recommended Improvements
+
+- Add more story cards and travel locations in `src/database/`.
+- Enhance the mobile menu experience in `src/components/Navbar.jsx`.
+- Use `framer-motion` for page transitions in route components.
+
+## Project Structure
+
+```
+src/
+  App.jsx
+  main.jsx
+  index.css
+  components/
+    About.jsx
+    Contact.jsx
+    FloatingActions.jsx
+    Footer.jsx
+    Hero.jsx
+    JourneyTimeline.jsx
+    Loader.jsx
+    Navbar.jsx
+    Portfolio.jsx
+    ProfessionalTimeline.jsx
+    ProfileAbout.jsx
+    ProfileHero.jsx
+    Skills.jsx
+  database/
+    ProjectData.js
+    StroyData.js
+    TravelData.js
+    TravelDiaryData.js
+  pages/
+    HistoricalAdventures.jsx
+    Journey.jsx
+    ProfessionalJourney.jsx
+    Profile.jsx
+    ProjectDetails.jsx
+    Stories.jsx
+    Story_details.jsx
+    Travel_Diary.jsx
+```
+
+## Notes
+
+- The screenshot above shows the live site preview.
+- The app is deployed at the provided Vercel URL.
+- Customize the experience by updating `src/components` and `src/pages`.
