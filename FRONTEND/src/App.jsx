@@ -15,7 +15,6 @@ import Story_details from './pages/Story_details';
 import ProjectDetails from './pages/ProjectDetails';
 
 
-my_api ="ghsuhyQUAY12563"
 
 
 
